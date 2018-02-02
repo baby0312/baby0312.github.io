@@ -230,6 +230,9 @@ classes that you can use:
     <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
     
 </section>
+  
+
+
 
 
 </article>
@@ -242,11 +245,22 @@ classes that you can use:
 </footer>
         </div>
     </div>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">            <!--引入fancybox的样式-->
+
 
     <!-- js files -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/scale.fix.js"></script>
+	
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="/js/jquery.mousewheel-3.0.6.pack.js"></script>  <!--带有鼠标滚动效果的库-->
+	<style type="text/css">
+		#content{width: 800px;margin: 20px auto;overflow: hidden;}
+		#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {background-image: url('/images/fancybox_sprite.png');}  /**更改fancybox默认的图片路径**/
+	</style>
     
 
     
@@ -274,4 +288,9 @@ classes that you can use:
 <![endif]-->
 
 </body>
+<script type="text/javascript">
+  $(function(){
+    $(".fancybox").fancybox();
+  })
+</script>
 </html>

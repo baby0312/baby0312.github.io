@@ -1136,7 +1136,9 @@ hr {
 .post-meta {
   margin: 0 0 1.4em 0;
   color: #c7c7c7; }
-
+.post-donate {
+  border-top: 1px solid #dddddd;
+  padding: 40px 0; }
 .post-meta__date {
   margin-right: .5em; }
 
